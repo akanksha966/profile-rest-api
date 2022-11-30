@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from django.contrib import admin
+
+from profile_flipkart import models
+
+admin.site.register(models.UserProfile)

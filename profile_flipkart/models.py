@@ -1,4 +1,4 @@
-from django.db import models
+
 from django.db import models
 
 from django.contrib.auth.models import AbstractBaseUser
@@ -49,7 +49,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
     is_active=models.BooleanField(default=True)
 
-    is_staff=models.BooleanField(default=False)
+    is_staff=models.BooleanField(default=True)
 
     objects=UserProfileManager()
 
